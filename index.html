@@ -1,0 +1,111 @@
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>-->
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+</head>
+
+<body>
+<!-- Start of first page -->
+<div data-role="page" id="home">
+	<!--header start's here-->
+	<div data-role="header" data-position="fixed">
+		
+		<div id="maindiv"  data-role="controlgroup" data-type="horizontal" class="ui-bar ui-bar-a">
+            <a  data-role="button" data-inline="true" href="#home"  data-transition="slideup">Home</a>
+            <a  data-role="button" data-inline="true" href="#login" data-transition="slideup">Login</a>
+            <a  data-role="button" data-inline="true" href="#contact" data-transition="slideup">Contact</a>
+        </div>
+		
+	</div>
+	<!--header end's here-->
+	<!-- content -->
+    <div role="main" class="ui-content">
+		
+        <h1>home</h1>
+        <div class="jumbotron text-center">
+        <p>welcome to my sample app...Let's have fun....</p>
+		<p>
+			<img src="stock.jpg" class="img-circle"/>
+		</p>
+		</div>
+       <!-- <p><a href="#second-page" data-role="button" data-inline="true">next</a></p>-->
+    </div>
+    <!-- /content -->
+	
+	<!-- footer -->
+	<div data-role="footer" data-position="fixed">
+		<h2>created by MAHI</h2>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page -->
+
+
+<!-- Start of login page -->
+<div data-role="page" id="login">
+    <div role="main" class="ui-content">
+        <h1>Login</h1>
+        <div data-role="fieldcontain">
+			<table>
+			<tr><td>NAME</td><td><input type="text" ></td></tr>
+			<tr><td>PASSWORD</td><td> <input type="password" ></td></tr>
+			<tr><td><a href="#" data-role="button" data-inline="true">Login</a></td>
+			<td><a href="#home" data-role="button" data-inline="true">Cancel</a></td></tr></table>
+			<a href="#signup" data-inline="true">signup for new users</a></P>
+		</div>
+        
+    </div>
+ <!-- /content -->
+</div>
+<!-- /login -->
+
+
+<!-- Start of signup page -->
+<div data-role="page" id="signup">
+    <div role="main" class="ui-content">
+        <h1>Signup</h1>
+        <div data-role="fieldcontain">
+			<table>
+			<tr><td>NAME</td><td><input type="text" ></td></tr>
+			<tr><td>EMAIL ID</td><td><input type="text" ></td></tr>
+			<tr><td>PASSWORD</td><td><input type="text" ></td></tr>
+			<tr><td>RE ENTER PASSWORD</td><td> <input type="password" ></td></tr>
+			<tr><td><a href="#" data-role="button" data-inline="true">SIGNUP</a></td>
+			<td><a href="#home" data-role="button" data-inline="true">Cancel</a></td></tr></table>
+			
+		</div>
+	
+    </div>
+	<!-- /content -->
+</div> 
+<!-- /signup -->
+
+<!-- Start of contact page -->
+<div data-role="page" id="contact">
+    <div role="main" class="ui-content">
+        <h1>Signup</h1>
+        <div data-role="fieldcontain">
+			<table>
+			<tr><td>NAME</td><td><input type="text" ></td></tr>
+			<tr><td>EMAIL ID</td><td><input type="text" ></td></tr>
+			<tr><td>QUERY</td><td><textarea rows="2" cols="2" ></textarea></td></tr>
+			<tr><td><a href="#" data-role="button" data-inline="true">SEND</a></td>
+			<td><a href="#home" data-role="button" data-inline="true">Cancel</a></td></tr></table>
+			
+		</div>
+	</div>
+	<!--/content-->
+</div>
+<!-- /contact -->
+</body>
+</html>
+<!-- /page -->
