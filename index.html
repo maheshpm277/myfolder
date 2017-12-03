@@ -1,0 +1,80 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+<script src="js/jquery.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+
+<!-- Start of first page -->
+<div data-role="page" id="home">
+	<!--header start's here-->
+	<div data-role="header" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal" class="ui-btn-left">
+            <a  data-role="button" data-inline="true" href="#home" data-transition="slideup">Home</a>
+            <a  data-role="button" data-inline="true" href="#login" data-transition="slideup">Login</a>
+            <a  data-role="button" data-inline="true" href="#contact" data-transition="slideup">Contact</a>
+        </div>
+		<h1>sample app</h1>
+	</div>
+	<!--header end's here-->
+	<!-- content -->
+    <div role="main" class="ui-content">
+        <h1>home</h1>
+        
+        <p>welcome to my sample app...Let's have fun....</p>
+		<p>
+			<img src="css/stock.jpg" position="inline"/>
+		</p>
+       <!-- <p><a href="#second-page" data-role="button" data-inline="true">next</a></p>-->
+    </div>
+    <!-- /content -->
+	
+	<!-- footer -->
+	<div data-role="footer" data-position="fixed">
+		<h2>created by MAHI</h2>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page -->
+
+
+<!-- Start of second page -->
+<div data-role="page" id="login">
+    <div role="main" class="ui-content">
+        <h1>Login</h1>
+        <div data-role="fieldcontain">
+			<table>
+			<tr><td>NAME</td><td><input type="text" ></td></tr>
+			<tr><td>PASSWORD</td><td> <input type="password" ></td></tr>
+			<tr><td><a href="#" data-role="button" data-inline="true">Login</a></td>
+			<td><a href="#home" data-role="button" data-inline="true">Cancel</a></td></tr></table>
+			<a href="#signup" data-inline="true">signup for new users</a></P>
+		</div>
+        
+    </div>
+    <!-- /content -->
+</div>
+<!-- /page -->
+
+
+<!-- Start of third page -->
+<div data-role="page" id="signup">
+    <div role="main" class="ui-content">
+        <h1>Signup</h1>
+        <div data-role="fieldcontain">
+			<table>
+			<tr><td>NAME</td><td><input type="text" ></td></tr>
+			<tr><td>EMAIL ID</td><td><input type="text" ></td></tr>
+			<tr><td>PASSWORD</td><td><input type="text" ></td></tr>
+			<tr><td>RE ENTER PASSWORD</td><td> <input type="password" ></td></tr>
+			<tr><td><a href="#" data-role="button" data-inline="true">SIGNUP</a></td>
+			<td><a href="#home" data-role="button" data-inline="true">Cancel</a></td></tr></table>
+			
+		</div>
+    </div>
+    <!-- /content -->
+
+</div>
+<!-- /page -->
